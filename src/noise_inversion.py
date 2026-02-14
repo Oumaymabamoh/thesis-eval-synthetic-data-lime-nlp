@@ -22,6 +22,6 @@ def preprocess_data(df, column_name, apply_noise=False):
 df_new = preprocess_data(df, column_name, apply_noise=True)
 
 # Save to a new file
-df_new.to_csv('../../data/noisy_inversion.csv', index=False)
+df_new.to_csv('../data/noisy_inversion.csv', index=False)
 
 print("File saved successfully!")
