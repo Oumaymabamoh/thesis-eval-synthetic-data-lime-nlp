@@ -10,4 +10,4 @@
 # experimental design 
 # Model
 # Results 
-# How to get started 
+# Getting Started
