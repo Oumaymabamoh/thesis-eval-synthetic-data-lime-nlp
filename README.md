@@ -12,5 +12,7 @@ The dataste used in this study was sourced from and treated with full compliance
 # experimental design 
 The flowchart below shows the exprimental workflow to achive the stufy goals.
 # Model
+The model used in this study to serve as black boxe model and classifier is DistilBERT developed by Hugging Face 
 # Results 
 # Getting Started
+
