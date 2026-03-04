@@ -49,15 +49,15 @@ def apply_sentiment_noise(text, random_buffer=0.1):
     new_words = []
 
     for word in words:
-        # 1. Clean the word for checking
+        # Clean the word for checking
         clean_word = re.sub(r'[^\w]', '', word).lower()
 
-        # 2. Check sentiment score
+        # Check sentiment score
         # Using polarity_scores on a single word
         scores = sia.polarity_scores(clean_word)
         compound_score = scores['compound']
 
-        # 3. Logic: Lowered threshold (0.01) to catch "low sentiment" words
+        # Logic: Lowered threshold (0.01) to catch "low sentiment" words
         # Also specifically check if 'pos' or 'neg' is non-zero
         has_any_sentiment = abs(compound_score) > 0.01 or scores['pos'] > 0 or scores['neg'] > 0
 
@@ -88,13 +88,6 @@ if column_to_process in df.columns:
 else:
     print(f"Error: Column '{column_to_process}' not found in DataFrame.")
 
-# 3. Verify uniqueness
-print(f"Total Rows: {len(df)}")
-print(f"Unique IDs: {df['id'].nunique()}") # Change 'id' to your ID column name
-
-# --- Execution ---
-#df[column_name] = df[column_name].apply(apply_sentiment_noise)
-
-
+# --- saved  ---
 df.to_csv('../data/noisy.csv')
 print("Process complete!")
