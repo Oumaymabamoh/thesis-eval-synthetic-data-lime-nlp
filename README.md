@@ -12,6 +12,7 @@ this thesis aims to evaluate LIME's stability on model trained soley on syntheti
 The dataste used in this study was sourced from and treated with full compliance and research paper ethics. 
 # experimental design 
 The flowchart below shows the exprimental workflow to achive the stufy goals.
+<img width="2798" height="939" alt="workflow_diagram" src="https://github.com/user-attachments/assets/7c59fc66-6a05-4df1-96dd-8dec4948ad33" />
 # Model
 The model used in this study to serve as black boxe model and classifier is DistilBERT developed by Hugging Face.
 # Results 
