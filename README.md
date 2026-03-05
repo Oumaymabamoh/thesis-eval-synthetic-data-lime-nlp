@@ -10,7 +10,7 @@ As Large Language Models (LLMs) increasingly serve as engines for synthetic data
 # Objectives
 this thesis aims to evaluate LIME's stability on model trained soley on synthetic NlP dataset. Additionaly, analyzing how the noised data through perturbation techniques  affect the LIME's interpretation comparted to Model distortion itself.And how adjusting and choosing hyperparanetrs of LIME affect the overall concusion about both quality of data used and LIME.
 # Dataset overview
-The dataste used in this study was sourced from Check out [huggingface](https://huggingface.co/datasets/InfinitodeLTD/CRSD/tree/main)).  and treated with full compliance with the  and research paper ethics. 
+The dataste used in this study was sourced from Check out [huggingface](https://huggingface.co/datasets/InfinitodeLTD/CRSD/tree/main).  and treated with full compliance with the  and research paper ethics. 
 # experimental design 
 The flowchart below shows the exprimental workflow of this study.
 <img width="2798" height="939" alt="workflow_diagram" src="https://github.com/user-attachments/assets/7c59fc66-6a05-4df1-96dd-8dec4948ad33" />
@@ -18,4 +18,3 @@ The flowchart below shows the exprimental workflow of this study.
 # Getting Started
 ```bash
 pip install -r requirements.txt 
-
