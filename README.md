@@ -18,4 +18,5 @@ The model used in this study to serve as black boxe model and classifier is Dist
 # Results 
 
 # Getting Started
+```bash pip install -r requirements.txt 
 
